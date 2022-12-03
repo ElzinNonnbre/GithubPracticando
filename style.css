@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/ce/6a/ef/ce6aefa41d2b77fb60ce58a09c480b28.jpg);
+    background-size: contain;
+    font-family: 'Permanent Marker', cursive;
+    padding: 90px 20px 0px;
+}
+main{color: #F2F7A1;}
+
+header {
+    background-color: #453C67;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: #46C2CB;
+    text-decoration: none;
+}
+
+.logo {
+    color: #46C2CB; /* para darle color al logo porque no me dejo de otra forma */
+    text-decoration: none; /* para quitarle la linea de abajo no me dejo de otra forma (opciones)*/
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background-color: #6D67E4;
+    transition: 0.5s;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-toggle {
+    color: #46C2CB;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    /*display: none;*/ /*esto hace que desaparezca los punticos*/
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    header {
+        height: 60px;
+
+    }
+
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background: none;
+        color: #83c5f7;
+    }
+.nav-toggle {
+      display: block;
+    }
+.nav-menu_visible{}
+}
