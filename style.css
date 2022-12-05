@@ -33,8 +33,8 @@ header {
 }
 
 .logo {
-    /*color: #46C2CB;*/ /* para darle color al logo porque no me dejo de otra forma */
-    /*text-decoration: none;*/ /* para quitarle la linea de abajo no me dejo de otra forma (opciones)*/
+    color: #46C2CB; /* para darle color al logo porque no me dejo de otra forma */
+    text-decoration: none; /* para quitarle la linea de abajo no me dejo de otra forma (opciones)*/
     font-size: 30px;
     font-weight: bold;
     padding: 0 40px;
